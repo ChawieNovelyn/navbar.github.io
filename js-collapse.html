@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <nav class="navbar">
-<a href="js.css" class="logo">Logo</a>
+<a href="#" class="logo">Logo</a>
   <ul class="menu">
     <li><a href="#">Home</a></li>
     <li><a href="#">About</a></li>
     <li><a href="#">Contact</a></li>
   </ul>
-  <a href="#" class="icon">
+  <a href="js.css" class="icon">
     <i class="fa fa-bars"></i>
   </a>
 </nav>
+<body>
+  <script>
+    const icon = document.querySelector(".icon");
+    const menu = document.querySelector(".menu");
+    icon.addEventListener("click", () => {
+      menu.classList.toggle("show");
+    });
+  </script>
+</body>
+
 </html>
