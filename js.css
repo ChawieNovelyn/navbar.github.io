@@ -1,74 +1,107 @@
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
+.page-content{
+padding-top:30px;
+overflow: hidden;
+}
+.card {
+ border: 3px solid teal;
+ border-radius: 5px;
+ width: 70%;
+ margin-top:3%;
+ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+ transition: 0.3s;
+}
+.card-header{
+padding:1%;
+font-size: 20px;
+font-weight: 700;
+border-bottom: 2px solid rgb(192, 192, 192);
+}
+.card-body{padding:5%;}
+.card:hover {
+ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
-}
-
-.menu {
-  display: flex;
-  list-style: none;
-  margin: 0;
+*{
   padding: 0;
-}
-
-.menu li {
-  margin-left: 20px;
-}
-
-.menu li a {
-  color: #fff;
+  margin: 0;
   text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
-.icon {
+body{
+  font-family: montserrat;
+}
+
+.topnav {
+  background-color: skyblue;
+  height: 80px;
+  width: 100%;
+  position: fixed; top:0; width:100%; 
+}
+
+
+.topnav a {
+
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: skyblue;  
+
+
+}
+
+
+.topnav a:hover {
+  background-color: black;
+  transition: .5s;
+}
+
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+.topnav .icon {
   display: none;
+  line-height: 65px;
 }
 
-@media (max-width: 768px) {
-  .menu {
-    display: none;
-    flex-direction: column;
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 952px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav a {
+	  float: right;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
     position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    padding: 10px;
+    right: 0;
+    top: 0;
   }
-
-  .menu li {
-    margin-left: 0;
-    margin-bottom: 10px;
-  }
-
-  .menu li a {
+  .topnav.responsive a {
+    float: none;
     display: block;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
+    text-align: center;
   }
-
-  .icon {
-    display: block;
-    cursor: pointer;
-  }
-  
-  @media (max-width: 768px) {
-  .menu.show {
-    display: flex;
-  }
-}
-
-  
-  
 }
