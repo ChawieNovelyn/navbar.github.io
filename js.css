@@ -34,7 +34,7 @@ body{
 }
 
 .topnav {
-  background-color: skyblue;
+  background-color: lightgreen;
   height: 80px;
   width: 100%;
   position: fixed; top:0; width:100%; 
@@ -43,27 +43,27 @@ body{
 
 .topnav a {
 
-  color: white;
+  color: black;
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
   display: inline-block;
-  background-color: skyblue;  
+  background-color: lightgreen;  
 
 
 }
 
 
 .topnav a:hover {
-  background-color: black;
+  background-color: white;
   transition: .5s;
 }
 
 
 .topnav a.active {
   background-color: #04AA6D;
-  color: white;
+  color: black;
 }
 
 
